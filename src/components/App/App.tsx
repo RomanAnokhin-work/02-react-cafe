@@ -19,7 +19,7 @@ function App() {
   function handleVote(type: keyof VoteType) {
     setVotes((prev) => ({
       ...prev,
-      [type]: prev[type]++,
+      [type]: prev[type] + 1,
     }));
   }
 
